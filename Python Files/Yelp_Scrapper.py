@@ -108,7 +108,6 @@ def getting_org_data(list_of_links):
 
                 if business_website:
                     main = body2.find('main')
-                    #have to move to main to grab the business name, (unsure if i should move this out of an if statment)
                     business_name = body2.find('h1', class_='css-1se8maq').text
                     business_website2 = business_website.get('href')
                     bizzy_website = business_website2.removeprefix('/biz_redir?url=')
